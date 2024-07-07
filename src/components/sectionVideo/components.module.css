@@ -1,0 +1,166 @@
+.sectionVideo {
+  display: flex;
+  padding: 130px 0 0;
+  gap: 120px;
+  max-width: 1100px;
+}
+
+.textSlider,
+.sectionVideoImage {
+  width: 50%;
+}
+
+.sectionVideoImage {
+  position: relative;
+}
+
+.buttonSectionVideo {
+  top: 35%;
+  left: 42%;
+  z-index: 30;
+  width: 95px;
+  height: 95px;
+  font-size: 24px;
+  line-height: 95px;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  color: #f6716f;
+  background-color: #fff;
+  border: 2px solid #f6716f;
+  box-shadow: 0 25px 57px 3px rgba(73, 43, 124, 0.5);
+  animation: pulse 2s cubic-bezier(.66, 0, 0, 1) infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconSectionVideo {
+  width: 30px;
+  color: #f6716f;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgb(246, 113, 111, 0.5);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(246, 113, 111, 0.7);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgb(246, 113, 111, 0.5);
+  }
+}
+
+
+.textSlider {
+  width: 50%;
+}
+
+.titleSlider {
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 1.25;
+  color: #138afd;
+  margin-bottom: 1rem;
+}
+
+
+.subTitleSlider {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15em;
+  line-height: 134%;
+  margin-bottom: 2em;
+  color: #4e5052;
+}
+
+.containerButtonSlider {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.buttonFirstSlider {
+  position: relative;
+  z-index: 1;
+  height: 55px;
+  font-size: 16px;
+  padding: 0 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  font-weight: 700;
+  background-color: #007bff;
+  overflow: hidden;
+  transition: color 0.9s ease-in-out;
+  transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+  cursor: pointer;
+}
+
+.buttonFirstSlider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  background-color: #f6716f;
+  transition: left 0.9s ease-in-out;
+  z-index: -1;
+}
+
+.buttonFirstSlider:hover {
+  color: white;
+}
+
+.buttonFirstSlider:hover::before {
+  left: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, .5);
+  padding: 48px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+}

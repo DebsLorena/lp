@@ -1,0 +1,31 @@
+.establishments {
+  max-width: 1100px;
+  padding: 130px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+}
+
+.textSlider {
+  width: 70%;
+}
+
+.titleSlider {
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 1.25;
+  color: #138afd;
+  margin-bottom: 1rem;
+}
+
+
+.subTitleSlider {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15em;
+  line-height: 134%;
+  margin-bottom: 2em;
+  color: #4e5052;
+}
