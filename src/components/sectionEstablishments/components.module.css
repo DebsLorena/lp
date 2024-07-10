@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 32px;
   text-align: center;
+  flex-direction: column;
 }
 
 .textSlider {
@@ -20,7 +21,6 @@
   margin-bottom: 1rem;
 }
 
-
 .subTitleSlider {
   font-style: normal;
   font-weight: 400;
@@ -28,4 +28,44 @@
   line-height: 134%;
   margin-bottom: 2em;
   color: #4e5052;
+}
+
+.establishmentsImage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 1100px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 178px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.beforeImage,
+.afterImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.beforeImage {
+  top: 0;
+  left: 0;
+}
+
+.imageContainer:hover .beforeImage {
+  transform: translateY(-100%);
+}
+
+.imageContainer:hover .afterImage {
+  transform: translateY(-100%);
+}
+
+.afterImage {
+  top: 100%;
+  left: 0;
 }

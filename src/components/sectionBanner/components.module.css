@@ -1,0 +1,34 @@
+.banner {
+  margin-top: 36px;
+  display: flex;
+  padding: 3em 0;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  flex-direction: column;
+  background: #f6716f;
+}
+
+.textBanner {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleBanner {
+  width: 70%;
+  font-size: 1em;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.subTitleBanner {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 0;
+  color: #4e5052;
+}

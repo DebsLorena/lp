@@ -28,7 +28,7 @@
   color: #f6716f;
   background-color: #fff;
   border: 2px solid #f6716f;
-  box-shadow: 0 25px 57px 3px rgba(73, 43, 124, 0.5);
+  box-shadow: 0 25px 57px 3px rgba(19, 138, 253, 0.5);
   animation: pulse 2s cubic-bezier(.66, 0, 0, 1) infinite;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@
   font-weight: 700;
   font-size: 1.75em;
   line-height: 1.25;
-  color: #138afd;
+  color: rgb(19, 138, 253);
   margin-bottom: 1rem;
 }
 
