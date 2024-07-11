@@ -1,0 +1,138 @@
+.about {
+  display: flex;
+  padding: 3em 0;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  flex-direction: column;
+  background: white;
+}
+
+.containerAbout {
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+}
+
+.containerAbout h2 {
+  width: 100%;
+  font-size: 3.25em;
+  line-height: 1;
+  color: #f6716f;
+  padding-bottom: 16px;
+}
+
+.containerAbout p {
+  color: #4E5052;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.containerAbout h3 {
+  color: #4E5052;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 16px 0;
+}
+
+.containerAbout span {
+  color: #2a5298;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 16px 0;
+}
+
+.aboutText {
+  width: 60%;
+}
+
+.aboutImage {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 356px;
+}
+
+.titleCards {
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  color: #f6716f;
+  font-weight: 700;
+  font-size: 24px;
+  width: 100%;
+  padding-top: 64px;
+}
+
+.cardsCompany {
+  max-width: 1100px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  color: #fff;
+}
+
+.cardWrapper {
+  height: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.cardCompany {
+  margin-top: 12px;
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  /* border: 2px solid rgba(78, 80, 82, 0.1); */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  width: 300px;
+  height: 240px;
+  padding: 12px;
+  color: rgb(78, 80, 82);
+  box-shadow: 1px 2px 6px 1px rgba(48, 48, 48, .1);
+}
+
+.cardCompany h3 {
+  padding-bottom: 24px;
+  font-size: 24px;
+  color: #138afd;
+}
+
+.slick-slide>div {
+  padding: 0 10px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: transparent;
+}
+
+@media (max-width: 1024px) {
+  .cardCompany {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardCompany {
+    width: 250px;
+  }
+}

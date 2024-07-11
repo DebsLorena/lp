@@ -6,11 +6,15 @@ import SectionEstablishmentsComponent from "@/components/sectionEstablishments";
 import SectionBannerComponent from "@/components/sectionBanner";
 import SectionResultsComponent from "@/components/sectionResults";
 import SectionMyCompanyComponent from "@/components/sectionMyCompany";
+import SectionAboutComponent from "@/components/sectionAbout";
+import { FooterComponent } from "@/components/footer";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <HeaderComponent />
+      <div className={styles.divHeader}>
+        <HeaderComponent />
+      </div>
       <div className={styles.sliders}>
         <SliderComponent />
         <SectionVideoComponent />
@@ -19,6 +23,8 @@ export default function Home() {
       <SectionBannerComponent />
       <SectionResultsComponent />
       <SectionMyCompanyComponent />
+      <SectionAboutComponent />
+      <FooterComponent />
     </main>
   );
 }
