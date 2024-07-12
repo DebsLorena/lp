@@ -8,11 +8,10 @@ export default function HeaderComponent() {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const navItems = [
-    { name: "Resultados e Cases", href: "#", current: true },
-    { name: "Negócios Compatíveis", href: "#", current: false },
-    { name: "Sobre nós", href: "#", current: false },
-    { name: "Clientes", href: "#", current: false },
-    { name: "Blog", href: "#", current: false },
+    { name: "Resultados e Cases", href: "#results", current: true },
+    { name: "Negócios Compatíveis", href: "#company", current: false },
+    { name: "Sobre nós", href: "#about", current: false },
+    { name: "Clientes", href: "#establishments", current: false },
   ];
 
   const navItemsRight = [
@@ -21,9 +20,15 @@ export default function HeaderComponent() {
     { name: "Indique e ganhe!", href: "#", current: false },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
     <header id="header-section" className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={scrollToTop}>
         <Image src="/logo.png" alt="logo" width={153} height={46} />
       </div>
       <div className={styles.linksContainer}>

@@ -8,6 +8,7 @@ import EstablishmentsComponent from "@/components/establishments";
 import BannerComponent from "@/components/banner";
 import CompanyComponent from "@/components/company";
 import FooterComponent from "@/components/footer";
+import WhatsAppIcont from "@/components/whatsapp";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <CompanyComponent />
       <AboutComponent />
       <FooterComponent />
+      <WhatsAppIcont />
     </main>
   );
 }

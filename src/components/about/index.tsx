@@ -32,7 +32,7 @@ export default function AboutComponent() {
 
   return (
     <>
-      <section id="section-my-company" className={styles.about}>
+      <section id="about" className={styles.about}>
         <div className={styles.containerAbout}>
           <div className={styles.aboutText}>
             <h2>Sobre nós</h2>
