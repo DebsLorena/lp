@@ -1,13 +1,13 @@
 import styles from "./page.module.css";
 import HeaderComponent from "../components/header";
 import SliderComponent from "../components/slider";
-import SectionVideoComponent from "@/components/sectionVideo";
-import SectionEstablishmentsComponent from "@/components/sectionEstablishments";
-import SectionBannerComponent from "@/components/sectionBanner";
-import SectionResultsComponent from "@/components/sectionResults";
-import SectionMyCompanyComponent from "@/components/sectionMyCompany";
-import SectionAboutComponent from "@/components/sectionAbout";
-import { FooterComponent } from "@/components/footer";
+import VideoComponent from "@/components/video";
+import ResultsComponent from "@/components/results";
+import AboutComponent from "@/components/about";
+import EstablishmentsComponent from "@/components/establishments";
+import BannerComponent from "@/components/banner";
+import CompanyComponent from "@/components/company";
+import FooterComponent from "@/components/footer";
 
 export default function Home() {
   return (
@@ -17,13 +17,13 @@ export default function Home() {
       </div>
       <div className={styles.sliders}>
         <SliderComponent />
-        <SectionVideoComponent />
-        <SectionEstablishmentsComponent />
+        <VideoComponent />
+        <EstablishmentsComponent />
       </div>
-      <SectionBannerComponent />
-      <SectionResultsComponent />
-      <SectionMyCompanyComponent />
-      <SectionAboutComponent />
+      <BannerComponent />
+      <ResultsComponent />
+      <CompanyComponent />
+      <AboutComponent />
       <FooterComponent />
     </main>
   );

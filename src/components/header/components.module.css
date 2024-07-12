@@ -178,13 +178,16 @@
   }
 }
 
-
-@media (max-width: 360px) {
-  .buttonHeader {
-    display: none;
-  }
-
+@media (max-width: 985px) {
   .mobileMenu {
     width: 100%;
   }
+}
+
+@media (max-width: 485px) {
+  .mobileMenu {
+    border-bottom-left-radius: 0;
+  }
+
+
 }

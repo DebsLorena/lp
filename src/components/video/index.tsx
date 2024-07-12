@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 
-export default function SectionVideoComponent() {
+export default function VideoComponent() {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -18,9 +18,9 @@ export default function SectionVideoComponent() {
     setIsOpen(false);
   };
   return (
-    <section className={styles.sectionVideo}>
+    <section id="video" className={styles.sectionVideo}>
       <div className={styles.sectionVideoImage}>
-        <Image src="/gw-office.png" alt="slider" width={600} height={354} />
+        <Image src="/gw-office.png" alt="slider" width={600} height={354} className={styles.responsiveImage} />
         <button className={styles.buttonSectionVideo} onClick={openModal}>
           <IoPlayOutline className={styles.iconSectionVideo} />
         </button>

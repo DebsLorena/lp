@@ -99,6 +99,7 @@
 
 .carrossel {
   width: 50%;
+  padding-left: 120px;
 }
 
 .imagensCarrossel {
@@ -129,4 +130,38 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+
+@media (max-width: 1180px) {
+  .sectionSlider {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carrossel {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionSlider {
+    max-width: 750px;
+  }
+
+  .carrossel {
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width: 485px) {
+  .sectionSlider {
+    padding: 0 36px;
+  }
+
+  .carrossel {
+    padding-left: 0px;
+  }
 }

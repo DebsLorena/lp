@@ -106,3 +106,28 @@
 .cardCompany p {
   margin-top: 1em;
 }
+
+
+
+@media (max-width: 1180px) {
+  .cardsCompany {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .containerButtonsResults {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (max-width: 785px) {
+  .containerMyCompany {
+    padding: 0 36px;
+  }
+
+  .containerButtonsResults {
+    width: 100%;
+    padding: 0 36px;
+  }
+}

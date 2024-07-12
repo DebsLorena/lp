@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import styles from "./components.module.css";
 
-export default function SectionAboutComponent() {
+export default function AboutComponent() {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,24 +15,18 @@ export default function SectionAboutComponent() {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+    centerMode: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1180,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
+          centerMode: true,
         }
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      }
     ]
   };
 

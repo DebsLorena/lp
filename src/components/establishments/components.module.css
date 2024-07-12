@@ -69,3 +69,29 @@
   top: 100%;
   left: 0;
 }
+
+
+@media (max-width: 1180px) {
+  .establishmentsImage {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 985px) {
+  .textSlider {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .establishments {
+    max-width: 500px;
+  }
+
+  .textSlider {
+    width: 80%;
+    padding: 0 36px;
+  }
+}

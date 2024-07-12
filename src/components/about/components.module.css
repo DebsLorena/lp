@@ -84,6 +84,7 @@
   height: 260px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .cardCompany {
@@ -94,7 +95,6 @@
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  /* border: 2px solid rgba(78, 80, 82, 0.1); */
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
@@ -135,4 +135,40 @@
   .cardCompany {
     width: 250px;
   }
+}
+
+
+
+
+@media (max-width: 1180px) {
+  .containerAbout {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .aboutText {
+    width: 100%;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .titleCards {
+    max-width: 600px;
+  }
+
+  .cardsCompany {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 785px) {
+
+  .containerAbout,
+  .titleCards {
+    width: 100%;
+    padding: 0 36px;
+  }
+
 }

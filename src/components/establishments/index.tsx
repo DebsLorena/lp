@@ -2,9 +2,9 @@
 import Image from "next/image";
 import styles from "./components.module.css";
 
-export default function SectionEstablishmentsComponent() {
+export default function EstablishmentsComponent() {
   return (
-    <section id="section-slider" className={styles.establishments}>
+    <section id="slider" className={styles.establishments}>
       <div className={styles.textSlider}>
         <div>
           <h2 className={styles.titleSlider}>Já são milhares de estabelecimentos parceiros confiando e tendo sucesso com o Garçon Web.</h2>

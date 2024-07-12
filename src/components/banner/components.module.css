@@ -32,3 +32,9 @@
   margin: 0;
   color: #4e5052;
 }
+
+@media (max-width: 985px) {
+  .textBanner {
+    max-width: 600px;
+  }
+}

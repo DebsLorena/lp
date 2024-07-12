@@ -2,24 +2,25 @@
 import Image from "next/image";
 import styles from "./components.module.css";
 
-export default function SectionResultsComponent() {
+export default function ResultsComponent() {
   return (
     <>
-      <section id="section-results" className={styles.results}>
+      <section id="results" className={styles.results}>
         <div className={styles.containerResults}>
           <div className={styles.resultsLeft}>
             <h2 className={styles.titleResultsLeft}>Resultados</h2>
             <p className={styles.subTitleResultsLeft}>Garçom Web é essencial para o seu negócio.</p>
-
-            <iframe
-              width="520"
-              height="300"
-              src="https://www.youtube.com/embed/b17jGKnTqSU"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-
+            <div className="responsive-iframe">
+              <iframe
+                className={styles.responsiveIframe}
+                width="520"
+                height="300"
+                src="https://www.youtube.com/embed/b17jGKnTqSU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <p className={styles.titleList}>Confira cases de sucesso por segmento:</p>
             <ul className={styles.listResults}>
               <li >Cervejaria</li>

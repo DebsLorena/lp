@@ -340,3 +340,92 @@
 .cardCalc select::placeholder {
   color: #4e5052;
 }
+
+
+@media (max-width: 1180px) {
+  .containerResults {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerResults {
+    width: 50%;
+  }
+
+  .containerButtonsResults {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .cardsResults {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .cardsCalc {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (max-width: 985px) {
+  .containerValue {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 785px) {
+  .containerValue {
+    max-width: 100%;
+  }
+
+  .cardsResults {
+    width: 100%;
+  }
+
+  .cardsCalc {
+    width: 100%;
+  }
+
+  .resultsLeft,
+  .resultsRight {
+    width: 100%;
+  }
+
+  .containerResults {
+    width: 100%;
+    padding: 0 36px;
+  }
+
+  .containerButtonsResults {
+    width: 100%;
+    padding: 0 36px;
+  }
+
+  .containerValue {
+    padding: 0 36px;
+  }
+
+  .containerSecondButton {
+    width: 100%;
+    padding: 36px;
+  }
+
+  .calc {
+    padding: 0 36px;
+  }
+
+}
+
+
+@media (max-width: 485px) {
+  .responsiveIframe {
+    width: 320px;
+    height: 200px;
+  }
+
+  .listResults {
+    flex-wrap: wrap;
+  }
+}
