@@ -131,14 +131,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .cardCompany {
-    width: 250px;
-  }
-}
-
-
-
 
 @media (max-width: 1180px) {
   .containerAbout {
@@ -170,5 +162,14 @@
     width: 100%;
     padding: 0 36px;
   }
+}
 
+@media (max-width: 600px) {
+  .cardCompany {
+    width: 250px;
+  }
+
+  .cardCompany p {
+    font-size: 14px;
+  }
 }
